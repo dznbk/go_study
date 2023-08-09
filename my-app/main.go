@@ -1,6 +1,9 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"github.com/mattn/go-runewidth"
+)
 
 // iotaは都度評価される
 // Appleは 0 + 0
@@ -20,6 +23,7 @@ func main() {
 	arrayStudy()
 
 	fmt.Println("Hello, World!")
+	fmt.Println(runewidth.StringWidth("こにゃにゃちわわあ"))
 }
 
 func arrayStudy() {
