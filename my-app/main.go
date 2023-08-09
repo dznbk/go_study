@@ -17,5 +17,20 @@ func main() {
 	fmt.Println(Orange)
 	fmt.Println(Banana)
 
+	arrayStudy()
+
 	fmt.Println("Hello, World!")
+}
+
+func arrayStudy() {
+	a := make([]int, 5)
+	fmt.Println(len(a))
+	fmt.Println(cap(a))
+
+	for i := 0; i < 5; i++ {
+		a = append(a, i)
+	}
+
+	fmt.Println(len(a))
+	fmt.Println(cap(a))
 }
