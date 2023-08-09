@@ -10,7 +10,7 @@ import (
 // Orangeは 1 + 5
 // Bananaは 2 + 10
 const (
-	Apple = iota + iota
+	Apple  = iota + iota
 	Orange = iota + 5
 	Banana = iota + iota + 10
 )
