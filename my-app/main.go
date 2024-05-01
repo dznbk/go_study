@@ -35,6 +35,7 @@ func main() {
 
 func arrayStudy() {
 	a := make([]int, 5)
+	fmt.Println(a)
 	fmt.Println(len(a))
 	fmt.Println(cap(a))
 
@@ -42,6 +43,7 @@ func arrayStudy() {
 		a = append(a, i)
 	}
 
+	fmt.Println(a)
 	fmt.Println(len(a))
 	fmt.Println(cap(a))
 }
