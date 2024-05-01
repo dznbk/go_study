@@ -2,7 +2,6 @@ package main
 
 import (
 	"fmt"
-	"github.com/mattn/go-runewidth"
 )
 
 // iotaは都度評価される
@@ -15,6 +14,12 @@ const (
 	Banana = iota + iota + 10
 )
 
+var name = "dpon"
+
+func init() {
+	fmt.Println("init " + name)
+}
+
 func main() {
 	fmt.Println(Apple)
 	fmt.Println(Orange)
@@ -22,8 +27,10 @@ func main() {
 
 	arrayStudy()
 
+	fmt.Println("Hello! " + name)
 	fmt.Println("Hello, World!")
-	fmt.Println(runewidth.StringWidth("こにゃにゃちわわあ"))
+	fmt.Println(RX78)
+	fmt.Println(zeta)
 }
 
 func arrayStudy() {
